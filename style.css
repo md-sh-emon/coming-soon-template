@@ -1,0 +1,455 @@
+:root {
+    --primary-color: #3598db;
+    --overlay: rgba(0,0,0, 0.7);
+    --bg-light: #ffffff;
+    --bg-dark: #2d3436;
+    --text-dark: rgba(0,0,0, 0.7);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url('images/laptops.jpg');
+    background-size: cover;
+    background-position: cover;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header .overlay {
+    background-color: var(--overlay);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text h3 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    line-height: 2.5em;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.header-text h2 {
+    font-size: 22px;
+}
+
+/* Count Down Area */
+.count-down-area {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.count-down-single {
+    border: 2px solid var(--primary-color);
+    padding: 15px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.count-down-single {
+    margin-right: 10px;
+}
+
+.count-down-single:last-child {
+    margin-right: 0;
+}
+
+.count-down-single h2 {
+    line-height: 1.5em;
+}
+
+.count-down-single p {
+    color: var(--primary-color);
+}
+
+/* Subscribe Area */
+.subscribe-area p {
+    font-weight: 700;
+    line-height: 3em;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.subscribe-area input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid var(--primary-color);
+    background-color: rgba(250, 248, 248, 0.0);
+    color: #ffffff;
+}
+
+.subscribe-area input[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: 2px solid var(--primary-color);
+    font-weight: 700;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* Social Profiles */
+
+.social-profiles {
+    margin: 40px 0;
+}
+
+.social-profiles ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-profiles ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.social-profiles ul li a:hover {
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Services Area */
+.services-area {
+    background: var(--bg-light);
+    padding: 40px 0;
+}
+
+.services-text {
+    text-align: center;
+}
+
+.services-text h3 {
+    text-transform: uppercase;
+    line-height: 2em;
+    font-size: 22px;
+}
+
+.section-icon i{
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    font-size: 24px;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+.section-icon span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-icon span::before,
+.section-icon span::after {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: var(--primary-color);
+    display: block;
+}
+
+.section-icon span::before {
+    margin-right: 10px;
+}
+
+.section-icon span::after {
+    margin-left: 10px;
+}
+
+.services-text h2 {
+    color:rgba(0,0,0, 0.7);
+    line-height: 2em;
+}
+
+.services-text p {
+    text-transform: uppercase;
+    line-height: 2em;
+    color: var(--text-dark);
+}
+
+.services-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.services-item {
+    text-align: center;
+    padding: 10px;
+    flex: 25%;
+}
+
+.services-item i {
+    color: var(--primary-color);
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.services-item h3 {
+    text-transform: uppercase;
+    line-height: 2em;
+}
+
+.services-item p {
+    color: var(--text-dark);
+    line-height: 1.5em;
+}
+
+/* About Area */
+.about-area {
+    background: var(--bg-dark);
+    padding: 40px 0;
+}
+
+.about-text {
+    text-align: center;
+}
+
+.about-text h3 {
+    text-transform: uppercase;
+    line-height: 2em;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.about-text h2 {
+    color:rgba(255,255,255, 0.7);
+    line-height: 2em;
+}
+
+.about-text p {
+    text-transform: uppercase;
+    line-height: 2em;
+    color: rgba(255,255,255, 0.7);;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-member {
+    flex: 33%;
+    text-align: center;
+    padding: 20px;
+}
+
+.team-member img {
+    max-width: 100%;
+}
+
+.team-member h3 {
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 2em;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.team-member p {
+    color:var(--primary-color);
+    line-height: 1.5em;
+    text-transform: capitalize;
+}
+
+/* Contact Area */
+.contact-area {
+    background: var(--bg-light);
+    padding: 40px 0;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-text h3 {
+    text-transform: uppercase;
+    line-height: 2em;
+    font-size: 22px;
+}
+
+.contact-text h2 {
+    color:rgba(0,0,0, 0.7);
+    line-height: 2em;
+}
+
+.contact-text p {
+    text-transform: uppercase;
+    line-height: 2em;
+    color: var(--text-dark);
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info input[type="text"],
+.user-info input[type="email"] {
+    width: 49.5%;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    outline: 0;
+}
+
+.contact-form .message textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    outline: 0;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+.contact-form .submit {
+    text-align: center;
+}
+
+.contact-form .submit input[type="submit"] {
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contact-form .submit input[type="submit"]:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+/* Footer Area */
+.footer {
+    background: var(--bg-dark);
+    padding: 20px;
+    text-align: center;
+    color: rgba(255,255,255, 0.7);
+}
+
+/* Media Query */
+@media all and (max-width: 1000px){
+    .services-item {
+        flex: 50%;
+    }
+    .team-member {
+        flex: 50%;
+    }
+}
+@media all and (max-width: 768px){
+    .services-item {
+        flex: 100%;
+    }
+    .user-info {
+        display: block;
+    }
+    .user-info input[type="text"],
+    .user-info input[type="email"] {
+        width: 100%;
+    }
+    .user-info input[type="text"] {
+        margin-bottom: 10px;
+    }
+    .contact-form .message textarea {
+        margin-top: 0;
+    }
+}
+@media all and (max-width: 600px){
+    .team-member {
+        flex: 100%;
+    }
+    .count-down-single {
+        padding: 10px;
+        width: 80px;
+        height: 80px;
+        font-size: 15px;
+    }
+    .subscribe-area p {
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.5em;
+    }
+    .subscribe-area input[type="email"] {
+        width: 250px;
+    }
+}
+@media all and (max-width: 560px) {
+    .about-text h2 {
+        line-height: 1.5em;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .contact-text h2 {
+        line-height: 1.5em;
+    }
+}
+@media all and (max-width: 450px) {
+    .subscribe-area input[type="email"] {
+        width: 200px;
+    }
+    .header-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media all and (max-width: 374px) {
+    .services-text h2 {
+        line-height: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media all and (max-width: 364px) {
+    .header-text h3 {
+        line-height: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media all and (max-width: 360px) {
+    .services-text h2 {
+        line-height: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
